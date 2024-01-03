@@ -25,4 +25,8 @@
 - Link AWS and Deploy
 - Automate deployment with terraform
 - Create CD
+- Check that website does not return any errors (console log, status codes)
 - Perftest website & optimize
+    - Chrome dev tools
+    - Optimize bundle size & loading
+- Review security & check for potential vulnerabilities
