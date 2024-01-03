@@ -1,5 +1,7 @@
 # maxgruebmeyer-website
 
+Run the development server on localhost:3000 via `yarn dev`.
+
 ## TODO
 
 - Develop basic website (next/react?)
