@@ -1,10 +1,19 @@
+using Website.Interfaces;
+using Website.Handlers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<IBookHandler, BookHandler>();
+builder.Services.AddScoped<IProblemHandler, ProblemHandler>();
+builder.Services.AddScoped<IUtilLinkHandler, UtilLinkHandler>();
+builder.Services.AddScoped<IVideoHandler, VideoHandler>();
+
 var app = builder.Build();
 
+// TODO (GM): Create your own error page!
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
