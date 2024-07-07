@@ -13,6 +13,7 @@ the website starts on `localhost:5000`.
 
 ## TODO
 
+- Once you're done with Sopro lift this to .NET 8.0 (and change nullable properties to required)
 - Implement Pipeline with auto-formatter
 - Implement Frontend Tests with Selenium
 - What does someone need for DSGVO (cookie banner etc)
