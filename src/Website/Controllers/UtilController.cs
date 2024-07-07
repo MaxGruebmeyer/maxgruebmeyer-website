@@ -11,15 +11,10 @@ public class UtilController : Controller
         _logger = logger;
     }
 
-    // TODO (GM):
-    // - Hex/Bin Converter
-    // - Binomialkoeffizient
-    // - Integralrechner
-    // - Differentialrechner
-    // - String-Compare
-
     public IActionResult Index()
     {
         return View();
     }
+
+    // TODO (GM): Binomialkoeffizient-Rechner schreiben!
 }

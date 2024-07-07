@@ -14,6 +14,7 @@ the website starts on `localhost:5000`.
 ## TODO
 
 - Implement Pipeline with auto-formatter
+- Implement Frontend Tests with Selenium
 - What does someone need for DSGVO (cookie banner etc)
 - Beautify shit with tailwindcss
 - Purchase domain
