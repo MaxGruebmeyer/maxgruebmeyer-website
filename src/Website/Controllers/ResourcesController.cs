@@ -11,12 +11,6 @@ public class ResourcesController : Controller
         _logger = logger;
     }
 
-    // TODO (GM):
-    // - Recommended Books
-    // - Recommended Videos
-    // - Lecture Notes - possibly german only
-    // - Interesting Research Papers
-
     public IActionResult Index()
     {
         return View();
