@@ -12,25 +12,33 @@
 </div>
 
 <div class="mx-auto max-w-2xl lg:mx-0">
-    <h3 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-200 sm:text-4xl">Some good reads</h2>
+    <h3 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-200 sm:text-4xl mt-10 mb-5">Some good reads</h3>
 
-    @foreach (Book book in @Model.Books)
-    {
-    <!-- TODO (GM): Replace this with a list of some sort! -->
-    <p class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
-    @book.Name
-    </p>
-    }
+    <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8">
+        @foreach (Book book in @Model.Books)
+        {
+        <li class="relative">
+            <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800 ring-1 ring-inset ring-gray-500/10 dark:ring-white/10">
+                <div class="mx-5 my-5 rounded-lg">
+                    <image class="w-full object-contain h-96 w-48" src="@book.ImageUrl"/>
+                    <p class="my-3 mx-2 text-lg text-center leading-8 text-gray-700 dark:text-gray-300">
+                    @book.Name
+                    </p>
+                </div>
+            </div>
+        </li>
+        }
+    </ul>
 </div>
 
 <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-    <h3 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-200 sm:text-4xl">Worth a watch</h2>
+    <h3 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-200 sm:text-4xl mt-10 mb-5">Worth a watch</h3>
 
     <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8">
         @foreach (Video video in @Model.Videos)
         {
         <li class="relative">
-            <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+            <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-900 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                 <iframe class="w-full aspect-[16/9]" src="@video.Url"></iframe>
             </div>
         </li>

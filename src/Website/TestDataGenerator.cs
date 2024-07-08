@@ -38,7 +38,9 @@ public static class TestDataGenerator
         {
             new Book
             {
-                Name = "Designing Data-Intensive Applications"
+                Name = "Designing Data-Intensive Applications",
+                Url = "https://dataintensive.net/",
+                ImageUrl = "https://dataintensive.net/images/book-cover.png",
             },
         };
     }
