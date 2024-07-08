@@ -3,7 +3,25 @@
     ViewData["Title"] = "Max Gruebmeyer - Home";
 }
 
-<div class="mx-auto max-w-2xl lg:mx-0">
+<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
     <!-- TODO (GM): Link all the sub-pages with some nice visuals here! -->
     <h2 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">Welcome Traveller!</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
+    It seems you have stumbled upon my website. How did that happen?
+    It doesn't matter really. However, since you're here now, you might just take a look around.
+    <br/>
+    Let me give you a little tour - but maybe, let me introduce myself first:
+    I'm Max, a Computer Science Student from Germany and this website is my archive.
+    I use it to collect some of the interesting and unique stuff I stumble upon,
+    collect links to tooling I deem useful (and maybe even write my own) or just
+    document my experiences.
+    <br/>
+    You will find 
+    <a class="hover:underline hover:text-gray-500 dark:hover:text-gray-400" asp-controller="Resources" asp-action="Index" aria-current="page">interesting books and videos</a>,
+    <a class="hover:underline hover:text-gray-500 dark:hover:text-gray-400" asp-controller="ProblemSets" asp-action="Index" aria-current="page">problems I spent way to much time on</a>,
+    <a class="hover:underline hover:text-gray-500 dark:hover:text-gray-400" asp-controller="Util" asp-action="Index" aria-current="page">some tooling I use more or less regularly</a>
+    and maybe even 
+    <a class="hover:underline hover:text-gray-500 dark:hover:text-gray-400" asp-controller="Blog" asp-action="Index" aria-current="page">a few words on projects I did</a>.
+    So if that sounds like your cup of tea a look around might be worth your while!
+    </p>
 </div>
