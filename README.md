@@ -13,12 +13,10 @@ the website starts on `localhost:5000`.
 
 ## TODO
 
-- Change Icons - both in HTML as well as the top browser icon
 - Once you're done with Sopro lift this to .NET 8.0 (and change nullable properties to required)
 - Implement Pipeline with auto-formatter
 - Implement Frontend Tests with Selenium
 - What does someone need for DSGVO (cookie banner etc)
-- Beautify shit with tailwindcss
 - Purchase domain
 - Create CI
 - Link AWS and Deploy
@@ -29,3 +27,4 @@ the website starts on `localhost:5000`.
     - Chrome dev tools
     - Optimize bundle size & loading
 - Review security & check for potential vulnerabilities
+- Optimize with Google Lighthouse
