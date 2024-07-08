@@ -24,6 +24,12 @@ public static class TestDataGenerator
         {
             problemHandler.AddProblem(problem);
         }
+
+        IUtilLinkHandler utilLinkHandler = serviceProvider.GetService<IUtilLinkHandler>()!;
+        foreach (UtilLink utilLink in GetUtilLinks())
+        {
+            utilLinkHandler.AddLink(utilLink);
+        }
     }
 
     private static IEnumerable<Book> GetBooks()
@@ -97,6 +103,39 @@ public static class TestDataGenerator
             {
                 Name = "Dislo-Bijektion",
                 Classification = ProblemClassification.DiscreteMath
+            },
+        };
+    }
+
+    private static IEnumerable<UtilLink> GetUtilLinks()
+    {
+        return new List<UtilLink>
+        {
+            new UtilLink
+            {
+                Name = "Binary Converter",
+                Description = "Easily convert numbers between binary, decimal and hexadecimal",
+                Target = "https://www.rapidtables.com/convert/number/hex-to-binary.html",
+            },
+            new UtilLink
+            {
+                Name = "Integralrechner",
+                Description = "Calculate Integrals. Also explains its solution (german only)",
+                Target = "https://www.integralrechner.de/",
+            },
+            new UtilLink
+            {
+                // TODO (GM): Write your own differential calculator... how hard can it be?
+                Name = "Differentialrechner",
+                Description = "Calculate Differentials. Also explains its solution (german only)",
+                Target = "https://www.ableitungsrechner.net/",
+            },
+            new UtilLink
+            {
+                // TODO (GM): Write your own client-side text-compare for security reasons
+                Name = "Text-Compare",
+                Description = "Find the differences between two strings",
+                Target = "https://text-compare.com/",
             },
         };
     }
