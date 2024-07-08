@@ -7,6 +7,11 @@ public class Problem : IEquatable<Problem>
     public string? Solution { get; init; }
     public Guid Guid { get; init; }
 
+    public Problem()
+    {
+        Guid = Guid.NewGuid();
+    }
+
     public bool Equals(Problem? problem)
     {
         return problem != null && Guid == problem.Guid;

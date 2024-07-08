@@ -1,17 +1,22 @@
+using Website;
 using Website.Interfaces;
 using Website.Handlers;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IBookHandler, BookHandler>();
-builder.Services.AddScoped<IProblemHandler, ProblemHandler>();
-builder.Services.AddScoped<IUtilLinkHandler, UtilLinkHandler>();
-builder.Services.AddScoped<IVideoHandler, VideoHandler>();
+// TODO (GM): Review the scope once you've switched to a real DB
+builder.Services.AddSingleton<IBookHandler, BookHandler>();
+builder.Services.AddSingleton<IProblemHandler, ProblemHandler>();
+builder.Services.AddSingleton<IUtilLinkHandler, UtilLinkHandler>();
+builder.Services.AddSingleton<IVideoHandler, VideoHandler>();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
+
+// TODO (GM): Remove this once you've moved to a real db -> Think about JSON/Protobuf Import/Export?
+TestDataGenerator.InjectTestData(app.Services);
 
 // TODO (GM): Create your own error page!
 // Configure the HTTP request pipeline.

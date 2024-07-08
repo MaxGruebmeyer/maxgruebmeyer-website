@@ -6,8 +6,12 @@ public class Video : IEquatable<Video>
 
     // TODO (GM): Change this to URL data type?
     public string? Url { get; init; }
-
     public Guid Guid { get; init; }
+
+    public Video()
+    {
+        Guid = Guid.NewGuid();
+    }
 
     public bool Equals(Video? video)
     {

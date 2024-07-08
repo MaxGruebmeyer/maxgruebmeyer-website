@@ -9,6 +9,11 @@ public class UtilLink : IEquatable<UtilLink>
     public string? Description { get; init; }
     public Guid Guid { get; init; }
 
+    public UtilLink()
+    {
+        Guid = Guid.NewGuid();
+    }
+
     public bool Equals(UtilLink? link)
     {
         return link != null && Guid == link.Guid;
