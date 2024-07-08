@@ -70,23 +70,33 @@ public static class TestDataGenerator
         {
             new Problem
             {
-                Name = "Thomaesche Funktion"
+                Name = "Thomaesche Funktion",
+                Classification = ProblemClassification.RealAnalysis,
             },
             new Problem
             {
-                Name = "Night of the Profs"
+                Name = "Average of the sum of sequence links",
+                Classification = ProblemClassification.RealAnalysis,
             },
             new Problem
             {
-                Name = "Navigating the Grid"
+                Name = "Night of the Profs",
+                Classification = ProblemClassification.Combinatorics,
             },
             new Problem
             {
-                Name = "The Penguin Problem"
+                Name = "Navigating the Grid",
+                Classification = ProblemClassification.Combinatorics,
             },
             new Problem
             {
-                Name = "Dislo-Bijektion"
+                Name = "The Penguin Problem",
+                Classification = ProblemClassification.DSA | ProblemClassification.DiscreteMath
+            },
+            new Problem
+            {
+                Name = "Dislo-Bijektion",
+                Classification = ProblemClassification.DiscreteMath
             },
         };
     }
