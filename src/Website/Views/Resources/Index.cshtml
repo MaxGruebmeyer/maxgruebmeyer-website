@@ -37,16 +37,3 @@
         }
     </ul>
 </div>
-
-<div class="mx-auto max-w-2xl lg:mx-0">
-    <h3 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-200 sm:text-4xl">Problem Sets</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
-    <!-- TODO (GM): Turn this into a real list -->
-    @foreach (Problem problem in @Model.Problems)
-    {
-    <!-- TODO (GM): Provide an API for the penguin problem so people can test their solution? -->
-    @problem.Name
-    <br/>
-    }
-    </p>
-</div>
