@@ -61,12 +61,12 @@ public static class TestDataGenerator
             },
             new Video
             {
-                Name = "Fibonacci Heaps or \"How to invent an extremly clever data structure\"",
+                Name = "Fibonacci Heaps explained",
                 Url = "https://www.youtube.com/embed/6JxvKfSV9Ns",
             },
             new Video
             {
-                Name = "Essence of Linear Algebra",
+                Name = "The Essence of Linear Algebra",
                 Url = "https://www.youtube.com/embed/fNk_zzaMoSs?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
             },
         };
