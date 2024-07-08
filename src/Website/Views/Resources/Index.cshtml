@@ -13,12 +13,14 @@
         {
         <li class="relative">
             <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800 ring-1 ring-inset ring-gray-500/10 dark:ring-white/10">
-                <div class="mx-5 my-5 rounded-lg">
-                    <image class="w-full object-contain h-96 w-48" src="@book.ImageUrl"/>
-                    <p class="my-3 mx-2 text-lg text-center leading-8 text-gray-700 dark:text-gray-300">
-                    @book.Name
-                    </p>
-                </div>
+                <a href="@book.Url" target="_blank">
+                    <div class="mx-5 my-5 rounded-lg">
+                        <image class="w-full object-contain h-96 w-48" src="@book.ImageUrl"/>
+                        <p class="my-3 mx-2 text-lg text-center leading-8 text-gray-700 dark:text-gray-300">
+                        @book.Name
+                        </p>
+                    </div>
+                </a>
             </div>
         </li>
         }
