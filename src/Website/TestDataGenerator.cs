@@ -106,6 +106,16 @@ public static class TestDataGenerator
                 Name = "Dislo-Bijektion",
                 Classification = ProblemClassification.DiscreteMath
             },
+            new Problem
+            {
+                Name = "Getting a closed formula for Fibonacci Numbers utilizing a power series",
+                Classification = ProblemClassification.RealAnalysis
+            },
+            new Problem
+            {
+                Name = "Getting a closed formula for Fibonacci Numbers utilizing linear algebra",
+                Classification = ProblemClassification.LinearAlgebra
+            },
         };
     }
 
